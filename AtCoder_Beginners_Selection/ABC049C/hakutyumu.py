@@ -6,6 +6,8 @@ def main():
 
     #print("組み合わせ文字列の最大数：",int(len(s)//5))
     listing=sets(int((len(s)-1)//5)) #文字列組み合わせリスト
+
+    print(listing)
     
     if s in listing:
         print("YES")
@@ -18,7 +20,6 @@ def main():
 def sets(n):
     word_list1=["dream", "dreamer", "erase", "eraser"] #ここに追加していく
     word_list2=["dream", "dreamer", "erase", "eraser"]
-    final_list=[] #全ての組み合わせを格納した1次元配列
 
     for j in range(n):
         #word_list1とword_list1の組み合わせリスト（各要素はタプル）
